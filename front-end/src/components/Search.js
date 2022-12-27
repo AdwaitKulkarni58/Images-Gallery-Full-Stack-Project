@@ -5,12 +5,12 @@ import { Col } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
-export default function Search() {
+export default function Search(props) {
   return (
     <Container className="mt-4">
       <Row className="justify-content-center">
         <Col xs={12} md={8} lg={6}>
-          <Form>
+          <Form onSubmit={props.handleSubmit}>
             <Row>
               <Col xs={9}>
                 <Form.Control placeholder="Search for image" />
