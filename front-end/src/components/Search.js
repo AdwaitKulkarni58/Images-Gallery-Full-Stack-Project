@@ -13,7 +13,12 @@ export default function Search(props) {
           <Form onSubmit={props.handleSubmit}>
             <Row>
               <Col xs={9}>
-                <Form.Control placeholder="Search for image" />
+                <Form.Control
+                  type="text"
+                  value={props.input}
+                  onChange={(e) => props.setInput(e.target.value)}
+                  placeholder="Search for image"
+                />
               </Col>
               <Col>
                 <Button variant="dark" type="submit">
