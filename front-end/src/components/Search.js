@@ -16,7 +16,9 @@ export default function Search() {
                 <Form.Control placeholder="Search for image" />
               </Col>
               <Col>
-                <Button variant="outline-primary">Search</Button>{" "}
+                <Button variant="dark" type="submit">
+                  Search
+                </Button>{" "}
               </Col>
             </Row>
           </Form>
