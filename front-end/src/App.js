@@ -2,6 +2,7 @@ import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import Search from "./components/Search";
+import ImageCard from "./components/ImageCard";
 
 const key = process.env.REACT_APP_KEY;
 
@@ -15,7 +16,7 @@ function App() {
       `https://api.unsplash.com/photos/random/?query=${input}&client_id=${key}`
     )
       .then((response) => response.json())
-      .then((data) => setImages([data, ...images]))
+      .then((data) => setImages([{ ...data, title: input }, ...images]))
       .catch((error) => console.log(error));
     setInput("");
   };
@@ -24,6 +25,7 @@ function App() {
     <div>
       <Header name="Images Gallery" />
       <Search input={input} setInput={setInput} handleSubmit={searchSubmit} />
+      <ImageCard />
     </div>
   );
 }
