@@ -25,7 +25,9 @@ function App() {
     <div>
       <Header name="Images Gallery" />
       <Search input={input} setInput={setInput} handleSubmit={searchSubmit} />
-      {!!images.length && <ImageCard image={images[0]} />}
+      {images.map((image, i) => (
+        <ImageCard key={i} image={image} />
+      ))}
     </div>
   );
 }
