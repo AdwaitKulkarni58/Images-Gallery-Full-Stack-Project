@@ -24,6 +24,10 @@ function App() {
     setInput("");
   };
 
+  const deleteImage = (id) => {
+    setImages(images.filter((image) => image.id !== id));
+  };
+
   return (
     <div>
       <Header name="Images Gallery" />
