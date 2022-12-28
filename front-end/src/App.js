@@ -10,6 +10,9 @@ function App() {
 
   const searchSubmit = (event) => {
     event.preventDefault();
+    fetch(
+      `https://api.unsplash.com/photos/random/?query=${input}&client_id=${key}`
+    );
   };
 
   return (
