@@ -24,7 +24,7 @@ function App() {
     setInput("");
   };
 
-  const deleteImage = (id) => {
+  const handleDelete = (id) => {
     setImages(images.filter((image) => image.id !== id));
   };
 
@@ -36,7 +36,7 @@ function App() {
         <Row xs={1} md={2} lg={3}>
           {images.map((image, i) => (
             <Col key={i} className="pb-3">
-              <ImageCard key={i} image={image} />
+              <ImageCard key={i} image={image} deleteImage={handleDelete} />
             </Col>
           ))}
         </Row>
