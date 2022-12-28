@@ -10,7 +10,7 @@ export default function ImageCard({ image }) {
       <Card.Body>
         <Card.Title>{image.title.toUpperCase()}</Card.Title>
         <Card.Text>{image.description || image.alt_description}</Card.Text>
-        <Button variant="primary">Delete</Button>
+        <Button variant="dark">Delete</Button>
       </Card.Body>
     </Card>
   );
