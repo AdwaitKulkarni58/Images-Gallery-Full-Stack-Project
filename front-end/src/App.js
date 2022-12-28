@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import Search from "./components/Search";
 import ImageCard from "./components/ImageCard";
+import { Container } from "react-bootstrap";
+import { Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 const key = process.env.REACT_APP_KEY;
 
@@ -25,9 +28,15 @@ function App() {
     <div>
       <Header name="Images Gallery" />
       <Search input={input} setInput={setInput} handleSubmit={searchSubmit} />
-      {images.map((image, i) => (
-        <ImageCard key={i} image={image} />
-      ))}
+      <Container>
+        <Row xs={1} md={2} lg={3}>
+          {images.map((image, i) => (
+            <Col key={i}>
+              <ImageCard key={i} image={image} />
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </div>
   );
 }
