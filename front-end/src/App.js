@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import Search from "./components/Search";
 
+const key = process.env.REACT_APP_KEY;
+
 function App() {
   const [input, setInput] = useState("");
 
