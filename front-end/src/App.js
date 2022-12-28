@@ -28,10 +28,10 @@ function App() {
     <div>
       <Header name="Images Gallery" />
       <Search input={input} setInput={setInput} handleSubmit={searchSubmit} />
-      <Container>
+      <Container className="mt-4">
         <Row xs={1} md={2} lg={3}>
           {images.map((image, i) => (
-            <Col key={i}>
+            <Col key={i} className="pb-3">
               <ImageCard key={i} image={image} />
             </Col>
           ))}
