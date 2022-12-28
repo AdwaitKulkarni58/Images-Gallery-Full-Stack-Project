@@ -7,6 +7,7 @@ const key = process.env.REACT_APP_KEY;
 
 function App() {
   const [input, setInput] = useState("");
+  const [images, setImages] = useState([]);
 
   const searchSubmit = (event) => {
     event.preventDefault();
@@ -14,7 +15,7 @@ function App() {
       `https://api.unsplash.com/photos/random/?query=${input}&client_id=${key}`
     )
       .then((response) => response.json())
-      .then((data) => console.log(data))
+      .then((data) => setImages([data, ...images]))
       .catch((error) => console.log(error));
     setInput("");
   };
