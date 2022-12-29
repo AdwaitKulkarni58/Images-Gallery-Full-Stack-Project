@@ -9,7 +9,7 @@ const navStyle = {
 export default function Header(props) {
   return (
     <Navbar style={navStyle} variant="dark">
-      <Logo style={{ maxWidth: "30em" }} />
+      <Logo alt={props.name} style={{ maxWidth: "30em" }} />
     </Navbar>
   );
 }
