@@ -6,7 +6,7 @@ export default function Welcome() {
   return (
     <Jumbotron>
       <h1>Images Gallery</h1>
-      <p>An application to fetch images using Unsplash API.</p>
+      <p>An application to fetch images using Unsplash API</p>
       <p>
         <Button variant="dark" href="https://unsplash.com" target="_blank">
           Learn more
