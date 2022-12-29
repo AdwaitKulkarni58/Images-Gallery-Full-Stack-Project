@@ -1,7 +1,6 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
 import { ReactComponent as Logo } from "../images/logo.svg";
-import { Container } from "react-bootstrap";
 
 const navStyle = {
   backgroundColor: "black",
