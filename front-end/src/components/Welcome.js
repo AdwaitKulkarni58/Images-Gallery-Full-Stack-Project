@@ -5,13 +5,12 @@ import { Button } from "react-bootstrap";
 export default function Welcome() {
   return (
     <Jumbotron>
-      <h1>Hello, world!</h1>
+      <h1>Images Gallery</h1>
+      <p>An application to fetch images using Unsplash API.</p>
       <p>
-        This is a simple hero unit, a simple jumbotron-style component for
-        calling extra attention to featured content or information.
-      </p>
-      <p>
-        <Button variant="primary">Learn more</Button>
+        <Button variant="dark" href="https://unsplash.com" target="_blank">
+          Learn more
+        </Button>
       </p>
     </Jumbotron>
   );
