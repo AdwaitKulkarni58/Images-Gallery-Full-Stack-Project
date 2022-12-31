@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "acedab6f30f7babf9e2c95e9b2cb7cec83ad18aa88c97baaaf47ba48dd80f52e"
+            "sha256": "d0667f92f73aa5532eb23cde7a37fe3da7cc751e59a01e7daf8383397591cff0"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -42,19 +42,19 @@
         },
         "itsdangerous": {
             "hashes": [
-                "sha256:2c2349112351b88699d8d4b6b075022c0808887cb7ad10069318a8b0bc88db44",
-                "sha256:5dbbc68b317e5e42f327f9021763545dc3fc3bfe22e6deb96aaf1fc38874156a"
+                "sha256:5174094b9637652bdb841a3029700391451bd092ba3db90600dea710ba28e97c",
+                "sha256:9e724d68fc22902a1435351f84c3fb8623f303fffcc566a4cb952df8c572cff0"
             ],
-            "markers": "python_version >= '3.7'",
-            "version": "==2.1.2"
+            "index": "pypi",
+            "version": "==2.0.1"
         },
         "jinja2": {
             "hashes": [
-                "sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852",
-                "sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"
+                "sha256:077ce6014f7b40d03b47d1f1ca4b0fc8328a692bd284016f806ed0eaca390ad8",
+                "sha256:611bb273cd68f3b993fabdc4064fc858c5b47a973cb5aa7999ec1ba405c87cd7"
             ],
-            "markers": "python_version >= '3.7'",
-            "version": "==3.1.2"
+            "index": "pypi",
+            "version": "==3.0.3"
         },
         "markupsafe": {
             "hashes": [
@@ -104,11 +104,11 @@
         },
         "werkzeug": {
             "hashes": [
-                "sha256:7ea2d48322cc7c0f8b3a215ed73eabd7b5d75d0b50e31ab006286ccff9e00b8f",
-                "sha256:f979ab81f58d7318e064e99c4506445d60135ac5cd2e177a2de0089bfd4c9bd5"
+                "sha256:63d3dc1cf60e7b7e35e97fa9861f7397283b75d765afcaefd993d6046899de8f",
+                "sha256:aa2bb6fc8dee8d6c504c0ac1e7f5f7dc5810a9903e793b6f715a9f015bdadb9a"
             ],
-            "markers": "python_version >= '3.7'",
-            "version": "==2.2.2"
+            "index": "pypi",
+            "version": "==2.0.2"
         }
     },
     "develop": {}
