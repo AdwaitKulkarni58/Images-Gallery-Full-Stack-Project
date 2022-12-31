@@ -1,12 +1,13 @@
 # save this as app.py
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
 
 @app.route("/new-image")
-def hello():
-    return "Hello, World!"
+def new_image():
+    input = request.args.get("query")
+    return {"input": input}
 
 
 if __name__ == "__main__":
