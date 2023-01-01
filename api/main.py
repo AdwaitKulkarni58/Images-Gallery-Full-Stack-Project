@@ -15,7 +15,10 @@ def new_image():
         "Authorization": "Client-ID " +
         UNSPLASH_KEY, "Accept-Version": "v1"
     }
-    requests.get(url=UNSPLASH_URL, headers=headers)
+    params = {
+        "query": input
+    }
+    requests.get(url=UNSPLASH_URL, headers=headers, params=params)
     return {"input": input}
 
 
