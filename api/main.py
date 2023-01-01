@@ -18,8 +18,8 @@ def new_image():
     params = {
         "query": input
     }
-    requests.get(url=UNSPLASH_URL, headers=headers, params=params)
-    return {"input": input}
+    response = requests.get(url=UNSPLASH_URL, headers=headers, params=params)
+    return response
 
 
 if __name__ == "__main__":
