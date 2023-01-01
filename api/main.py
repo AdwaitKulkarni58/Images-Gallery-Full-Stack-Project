@@ -19,7 +19,7 @@ def new_image():
         "query": input
     }
     response = requests.get(url=UNSPLASH_URL, headers=headers, params=params)
-    return response
+    return response.json()
 
 
 if __name__ == "__main__":
