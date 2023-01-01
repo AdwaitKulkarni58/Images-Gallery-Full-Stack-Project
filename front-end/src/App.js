@@ -8,7 +8,7 @@ import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 
-const key = process.env.REACT_APP_KEY;
+const API_URL = process.env.API_URL || "http://localhost:5050";
 
 function App() {
   const [input, setInput] = useState("");
@@ -16,9 +16,7 @@ function App() {
 
   const searchSubmit = (event) => {
     event.preventDefault();
-    fetch(
-      `https://api.unsplash.com/photos/random/?query=${input}&client_id=${key}`
-    )
+    fetch(`${API_URL}/new-image?query=${input}`)
       .then((response) => response.json())
       .then((data) => setImages([{ ...data, title: input }, ...images]))
       .catch((error) => console.log(error));
