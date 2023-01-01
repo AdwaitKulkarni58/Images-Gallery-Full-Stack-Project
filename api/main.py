@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 import requests
 from flask import Flask, request
+from flask_cors import CORS
 
 load_dotenv(dotenv_path="./.env.local")
 
@@ -13,6 +14,7 @@ if not UNSPLASH_KEY:
     raise EnvironmentError("Create .env.local file and insert API key")
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route("/new-image")
