@@ -8,7 +8,7 @@ import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 
-const API_URL = process.env.API_URL || "http://localhost:5050";
+const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5050";
 
 function App() {
   const [input, setInput] = useState("");
