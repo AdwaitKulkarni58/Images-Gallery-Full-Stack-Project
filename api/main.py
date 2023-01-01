@@ -21,8 +21,8 @@ CORS(app)
 def new_image():
     input = request.args.get("query")
     headers = {
-        "Authorization": "Client-ID " +
-        UNSPLASH_KEY, "Accept-Version": "v1"
+        "Authorization": "Client-ID " + UNSPLASH_KEY,
+        "Accept-Version": "v1"
     }
     params = {
         "query": input
