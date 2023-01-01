@@ -1,6 +1,9 @@
 # save this as app.py
 from flask import Flask, request
 
+UNSPLASH_URL = 'https://api.unsplash.com/photos/random/'
+UNSPLASH_KEY = ''
+
 app = Flask(__name__)
 
 
