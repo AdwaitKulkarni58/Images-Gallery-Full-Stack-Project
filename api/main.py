@@ -1,9 +1,13 @@
 # save this as app.py
+import os
+from dotenv import load_dotenv
 import requests
 from flask import Flask, request
 
+load_dotenv(dotenv_path="./.env.local")
+
 UNSPLASH_URL = "https://api.unsplash.com/photos/random/"
-UNSPLASH_KEY = ""
+UNSPLASH_KEY = os.environ.get("KEY", "")
 
 app = Flask(__name__)
 
