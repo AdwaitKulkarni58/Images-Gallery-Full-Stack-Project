@@ -18,7 +18,10 @@ function App() {
     event.preventDefault();
     fetch(`${API_URL}/new-image?query=${input}`)
       .then((response) => response.json())
-      .then((data) => setImages([{ ...data, title: input }, ...images]))
+      .then(
+        (data) => setImages([{ ...data, title: input }, ...images]),
+        localStorage.setItem("image", data)
+      )
       .catch((error) => console.log(error));
     setInput("");
   };

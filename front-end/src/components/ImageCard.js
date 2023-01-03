@@ -10,7 +10,12 @@ export default function ImageCard({ image, deleteImage }) {
       <Card.Body>
         <Card.Title>{image.title.toUpperCase()}</Card.Title>
         <Card.Text>{image.description || image.alt_description}</Card.Text>
-        <Button variant="dark" onClick={() => deleteImage(image.id)}>
+        <Button
+          variant="dark"
+          onClick={
+            (() => deleteImage(image.id), localStorage.removeItem("image"))
+          }
+        >
           Delete
         </Button>
       </Card.Body>
